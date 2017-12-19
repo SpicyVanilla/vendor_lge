@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     Entitlement \
     GCS \
     HiddenMenu \
-    HotwordEnrollmentWCD9330 \
     ims \
     LifeTimerService \
     qcrilmsgtunnel \

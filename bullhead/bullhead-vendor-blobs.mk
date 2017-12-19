@@ -13,12 +13,12 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so \
+    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so \
     vendor/lge/bullhead/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/lge/bullhead/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/lge/bullhead/proprietary/bin/cnd:system/bin/cnd \
     vendor/lge/bullhead/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/lge/bullhead/proprietary/bin/diag_klog:system/bin/diag_klog \
-    vendor/lge/bullhead/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
     vendor/lge/bullhead/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/lge/bullhead/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/lge/bullhead/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -88,4 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/lge/bullhead/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/lge/bullhead/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
-    vendor/lge/bullhead/proprietary/lib64/libtinyxml2.so:system/lib64/libtinyxml2.so
+    vendor/lge/bullhead/proprietary/lib64/libtinyxml2.so:system/lib64/libtinyxml2.so \
+    vendor/lge/bullhead/proprietary/priv-app/DMService/lib/arm/libdmengine.so:system/priv-app/DMService/lib/arm/libdmengine.so \
+    vendor/lge/bullhead/proprietary/priv-app/DMService/lib/arm/libdmjavaplugin.so:system/priv-app/DMService/lib/arm/libdmjavaplugin.so \
