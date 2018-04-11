@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Spicy Vanilla
+# Copyright (C) 2018 Spicy Vanilla
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,42 +14,43 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),bullhead)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := cneapiclient
+LOCAL_MODULE_OWNER := lge
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := cneapiclient.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
+LOCAL_MODULE_OWNER := lge
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := qcrilhook.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := rcsimssettings
+LOCAL_MODULE_OWNER := lge
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := rcsimssettings.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := rcsservice
+LOCAL_MODULE_OWNER := lge
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := rcsservice.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
-endif
