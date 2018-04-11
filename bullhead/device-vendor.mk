@@ -1,4 +1,4 @@
-#    Copyright (C) 2017 Spicy Vanilla
+# Copyright (C) 2017 Spicy Vanilla
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,43 +12,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/lge/bullhead/bullhead-vendor-blobs.mk)
+$(call inherit-product, vendor/lge/bullhead/blobs.mk)
 
-# Prebuilt APKs
+# app
+PRODUCT_PACKAGES += \
+    HiddenMenu \
+    RCSBootstraputil \
+    RcsImsBootstraputil \
+    TimeService \
+    Tycho
+
+# priv-app
 PRODUCT_PACKAGES += \
     atfwd \
-    CarrierServices \
-    CarrierSetup \
     CNEService \
     ConnMO \
-    datastatusnotification \
     DCMO \
     DiagMon \
     DMConfigUpdate \
     DMService \
-    Entitlement \
-    GCS \
-    HiddenMenu \
-    ims \
+    HotwordEnrollmentOKGoogleWCD9330 \
+    HotwordEnrollmentTGoogleWCD9330 \
+    HotwordEnrollmentXGoogleWCD9330 \
     LifeTimerService \
     qcrilmsgtunnel \
-    RCSBootstraputil \
-    RcsImsBootstraputil \
-    SetupSmartDeviceOverlay \
-    SprintDM \
-    TimeService \
-    Tycho
+    SprintDM
 
-# Prebuilt jars
+# framework
 PRODUCT_PACKAGES += \
     cneapiclient \
     qcrilhook \
     rcsimssettings \
     rcsservice
 
-# Symlinks
-PRODUCT_PACKAGES += \
-    libimsmedia_jni.so \
-    libimscamera_jni.so \
-    libdmengine.so \
-    libdmjavaplugin.so
